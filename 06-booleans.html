@@ -100,6 +100,7 @@
 
       // Truthy and falsy values: In JavaScript, certain values are considered "truthy" or "falsy" when evaluated in a boolean context. A truthy value is any value that is considered true when evaluated in a boolean context, while a falsy value is any value that is considered false. The following values are considered falsy in JavaScript: false, 0, -0, 0n (BigInt zero), "", null, undefined, and NaN. All other values are considered truthy. For example, the following values are considered truthy: true, 1, -1, "hello", [], {}, and function() {}.
 
+      /*
       console.log(Boolean(false)); // This will print false because false is a falsy value
       console.log(Boolean(0)); // This will print false because 0 is a falsy value
       console.log(Boolean(-0)); // This will print false because -0 is a falsy value
@@ -115,7 +116,9 @@
       console.log(Boolean([])); // This will print true because an empty array is a truthy value
       console.log(Boolean({})); // This will print true because an empty object is a truthy value
       console.log(Boolean(function() {})); // This will print true because a function is a truthy value
-      
+      */
+
+
       /*
       if (5) {
         console.log('truthy');
@@ -128,6 +131,7 @@
 
       // falsy value are false, 0, "", NaN, undefined, null  
       
+      /*
       const cartQuantity = 5;
       //because 5 is a truthy value, the if block will be executed and 'Cart has products' will be printed to the console
       if (cartQuantity) {
@@ -151,6 +155,41 @@
 
       let variable1;
       console.log(variable1); // This will print undefined because variable1 is declared but not assigned a value, and undefined is a falsy value
-      </script>
+      */
+
+       const result = true ? 'truthy' : 'falsy'; // This will evaluate to 'truthy' because the condition is true
+      const result2 = false ? 'truthy' : 'falsy'; // This will evaluate to 'falsy' because the condition is false
+
+      console.log(result); // This will print 'truthy' to the console
+      console.log(result2); // This will print 'falsy' to the console
+
+      // it is like and if statement but it is more concise and can be used in expressions. The syntax for the ternary operator is as follows:
+      // condition ? expressionIfTrue : expressionIfFalse
+
+
+      //GUARD OPERATOR
+      // The guard operator (&&) is a logical operator that can be used to conditionally
+      // execute a block of code based on the truthiness of a value. It is often used as a shorthand for an if statement when you want to execute a block of code only if a certain condition is true. The syntax for the guard operator is as follows:
+      // condition && expressionToExecuteIfTrue
+
+      false && console.log('This will not be printed because the condition is false');
+
+      true && console.log('This will be printed because the condition is true');
+
+      const message = false && 'hello';
+      console.log(message); // This will print false because the guard operator returns the value of the first operand if it is falsy, and the value of the second operand if the first operand is truthy
+      const message2 = true && 'hello';
+      console.log(message2); // This will print 'hello' to the console
+
+      const currency = 'EUR' || 'USD';
+      console.log(currency); // This will print 'EUR' because the OR operator returns the value of the first operand if it is truthy, and the value of the second operand if the first operand is falsy
+
+      const currency2 = '' || 'USD';
+      console.log(currency2); // This will print 'USD' because the OR operator returns the value of the first operand if it is truthy, and the value of the second operand if the first operand is falsy
+
+      //Default operators are used to provide default values for variables or expressions when the original value is falsy. The syntax for the default operator is as follows:
+
+      //variable = originalValue || defaultValue
+      </script> 
 </body>
 </html>
