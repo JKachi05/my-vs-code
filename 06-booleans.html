@@ -99,6 +99,7 @@
       
 
       // Truthy and falsy values: In JavaScript, certain values are considered "truthy" or "falsy" when evaluated in a boolean context. A truthy value is any value that is considered true when evaluated in a boolean context, while a falsy value is any value that is considered false. The following values are considered falsy in JavaScript: false, 0, -0, 0n (BigInt zero), "", null, undefined, and NaN. All other values are considered truthy. For example, the following values are considered truthy: true, 1, -1, "hello", [], {}, and function() {}.
+
       console.log(Boolean(false)); // This will print false because false is a falsy value
       console.log(Boolean(0)); // This will print false because 0 is a falsy value
       console.log(Boolean(-0)); // This will print false because -0 is a falsy value
@@ -115,6 +116,33 @@
       console.log(Boolean({})); // This will print true because an empty object is a truthy value
       console.log(Boolean(function() {})); // This will print true because a function is a truthy value
       
-  </script>
+      /*
+      if (5) {
+        console.log('truthy');
+      }
+
+      if (0) {
+        console.log('falsy');
+        this code will not be executed because 0 is a falsy value
+      } */
+
+      // falsy value are false, 0, "", NaN, undefined, null  
+      
+      const cartQuantity = 5;
+      //because 5 is a truthy value, the if block will be executed and 'Cart has products' will be printed to the console
+      if (cartQuantity) {
+        console.log('Cart has products');
+      } else {
+        console.log('your cart is empty');
+      }
+
+      let userInput = 0;
+      // because 0 is a falsy value, the else block will be executed and 'User input is falsy' will be printed to the console
+      if (userInput) {
+        console.log('User input is truthy');
+      } else {
+        console.log('User input is falsy');
+      }
+      </script>
 </body>
 </html>
