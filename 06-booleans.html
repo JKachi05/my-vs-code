@@ -143,6 +143,14 @@
       } else {
         console.log('User input is falsy');
       }
+
+      console.log(!0); // This will print true because 0 is a falsy value and the NOT operator negates it to true
+      console.log(!""); // This will print true because an empty string is a falsy value and the NOT operator negates it to true
+
+      console.log('text' / 5); // This will print NaN because dividing a string by a number results in NaN, which is a falsy value
+
+      let variable1;
+      console.log(variable1); // This will print undefined because variable1 is declared but not assigned a value, and undefined is a falsy value
       </script>
 </body>
 </html>
