@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+</head>
+
+<body>
+  <!-- A variable is a container for storing data -->
+  <!-- We can use variables to store different types of data such as numbers, strings, and booleans -->
+  <script>
+    let variabble1 = 3;
+    console.log(variabble1);
+
+    let calculation = 2 + 2;
+    console.log(calculation);
+    console.log(2 + calculation);
+    console.log(calculation + 2);
+
+    let result = calculation + 2;
+    console.log(result);
+
+    let message = "Hello, World!";
+    console.log(message);
+
+    //we can not use let as a variable name because it is a reserved keyword in JavaScript 
+    //let let = 5; // This will cause an error
+    // we can not use numbers at the beginning of a variable name
+    //let 1variable = 10; // This will cause an error
+    // we can use underscores or dollar signs in variable names
+    //let $variable = 5;
+
+    // semicolon variable meaans end of an instruction
+    //let isJavaScriptFun = true; 
+
+    console.log(';This is a string with a semicolon; it does not affect the code execution');
+
+    // How to change the number save in avariable
+    variabble1 = 5;
+    console.log(variabble1);
+
+    variabble1 = variabble1 + 2;
+    console.log(variabble1);
+
+    <!--// Camelcase
+// Naming convention for variables in JavaScript is camelCase, so we should use cartQuantity instead of cartquantity. Let's fix that in the code.
+// you can also use CartQuantity, but it's not a common convention in JavaScript. It's better to stick with camelCase for consistency and readability.
+//capitalize every word except the first one in the variable name, so it becomes cartQuantity. This way, it's easier to read and understand that it's a variable representing the quantity of items in the cart.
+
+//PascalCase is another naming convention where you capitalize the first letter of each word, including the first one. So, if we were to use PascalCase for our variable, it would be CartQuantity. However, in JavaScript, camelCase is more commonly used for variables and functions, while PascalCase is typically reserved for class names. Therefore, it's best to stick with camelCase for our cart quantity variable to maintain consistency with JavaScript conventions.
+
+//Kebab-case is a naming convention where you use lowercase letters and separate words with hyphens. For example, if we were to use kebab-case for our variable, it would be cart-quantity. However, kebab-case is not a valid naming convention for variables in JavaScript, as variable names cannot contain hyphens. Therefore, we cannot use kebab-case for our cart quantity variable. It's best to stick with camelCase for our variable name to ensure it is valid and follows JavaScript conventions.
+
+//snake_case is a naming convention where you use lowercase letters and separate words with underscores. For example, if we were to use snake_case for our variable, it would be cart_quantity. While snake_case is a valid naming convention in JavaScript, it is not as commonly used as camelCase for variables and functions. Therefore, it's generally recommended to stick with camelCase for our cart quantity variable to maintain consistency with JavaScript conventions and improve readability.
+
+ //Three ways to name variables in JavaScript:
+ //let
+  //const
+ //var  -->
+
+ const variable2 = 10;
+ console.log(variable2);
+
+ // we use const by default for variables that won't change 
+  // if we try to change the value of a const variable, we will get an error
+
+  console.log(typeof 3);
+  console.log(typeof "Hello");
+  console.log(typeof true);
+  console.log(typeof variable2);
+  console.log(typeof message );
+
+  //EXCERCISE
+  var name = "Kachi";
+  console.log(`My name is ${name}`);
+
+  var coffeePrice = 5 ;
+  var bagelsPrice = 3;
+  var soupPrice = 9;
+
+  var cost = coffeePrice + bagelsPrice + soupPrice;
+
+  console.log(`The total cost is $${cost}`);
+
+  var tax = Math.round(cost * 0.1);
+  console.log(`The tax is $${tax}`);
+
+  var Totalcost = `${(cost + tax)}`;
+  console.log(`Total cost $${Totalcost}`);
+
+  </script>
+</body>
+
+</html>

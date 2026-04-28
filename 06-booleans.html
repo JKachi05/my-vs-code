@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booleans</title>
+</head>
+<body>
+  <script>
+    /* 
+    true
+    false
+    // A boolean value represente wheater something is true or false. It can only be one of those two values. Booleans are often used in conditional statements to control the flow of a program. For example, you might use a boolean to check if a user is logged in or if a certain condition is met before executing a block of code.
+
+    3 < 5 // This expression evaluates to true because 3 is less than 5
+    10 > 20 // This expression evaluates to false because 10 is not greater than 20
+
+    console.log(3 < 5) // This will print true to the console
+
+    console.log(10 > 20) // This will print false to the console  
+
+    console.log(5 === 5) // This will print true because 5 is equal to 5
+
+    console.log(5 === 10) // This will print false because 5 is not equal to 10
+
+    console.log(5 !== 10) // This will print true because 5 is not equal to 10  
+
+    console.log(5 !== 5) // This will print false because 5 is equal to 5
+
+    console.log(5 >= 5) // This will print true because 5 is greater than or equal to 5
+
+    console.log(4 >= 5) // This will print false because 4 is not greater than or equal to 5
+
+    console.log(5 <= 5) // This will print true because 5 is less than or equal to 5
+
+    console.log(6 <= 5) // This will print false because 6 is not less than or equal to 5
+    
+    console.log(5 == '5.00'); // This will print true because the == operator performs type coercion and considers 5 and '5.00' to be equal
+
+    console.log(5 === '5.00'); // This will print false because the === operator does not perform type coercion and considers 5 (a number) and '5.00' (a string) to be different types, thus not equal   
+
+    console.log(5 != '5.00'); // This will print false because the != operator performs type coercion and considers 5 and '5.00' to be equal
+
+    console.log(5 !== '5.00'); // This will print true because the !== operator does not perform type coercion and considers 5 (a number) and '5.00' (a string) to be different types, thus not equal
+
+    console.log(3 < 5 - 3); // This will print false because the expression 5 - 3 evaluates to 2, and 3 is not less than 2
+
+    // if statements are used to execute a block of code only if a specified condition is true. The syntax for an if statement is as follows:
+    //if (condition) {
+      // code to be executed if the condition is true
+    //}
+    // For example:
+    if (true) {
+      console.log("hello");
+    } 
+ if (false) {
+      console.log("hello");
+    } else {
+      console.log("else block executed");
+    }
+    
+    // Practical example of using booleans in an if statement:
+    const age = 15;
+    if (age >= 16) {
+      console.log('you can drive');
+      console.log('congratulations');
+    } else if (age >= 14) {
+      console.log('Almost there, you can drive soon');
+    } else {
+      console.log('you cannot drive');
+      console.log('sorry');
+    }
+
+
+
+    // if-statements write multiple groups of code that will be executed based on different conditions. The syntax for an if-else statement is as follows:
+
+    */
+
+      //logical operators are used to combine multiple boolean expressions and evaluate them as a single boolean value. The most common logical operators are AND (&&), OR (||), and NOT (!). These operators allow you to create more complex conditions in your code. For example, you might use the AND operator to check if a user is logged in and has a certain permission before allowing them to access a specific feature.
+
+      /*console.log(true && true); // This will print true because both operands are true
+      console.log(true && false); // This will print false because one of the operands is false
+      console.log(false && false); // This will print false because both operands are false
+
+      console.log(0.2 >= 0 && 0.2 < 1/3); // This will print true because 0.2 is greater than or equal to 0 and less than 1/3
+      // OR operator (||) returns true if at least one of the operands is true, and false if both operands are false. The NOT operator (!) negates the value of a boolean expression, returning true if the expression is false and false if the expression is true.
+
+      console.log(true || true); // This will print true because at least one operand is true
+      console.log(true || false); // This will print true because at least one operand is true
+      console.log(false || false); // This will print false because both operands are false
+
+      // NOT operator (!) returns true if the operand is false, and false if the operand is true. It is used to negate a boolean expression.
+      // note if you say something is not true, it means it is false. If you say something is not false, it means it is true.
+
+      console.log(!true); // This will print false because the NOT operator negates the value
+      console.log(!false); // This will print true because the NOT operator negates the value
+      */
+      
+
+      // Truthy and falsy values: In JavaScript, certain values are considered "truthy" or "falsy" when evaluated in a boolean context. A truthy value is any value that is considered true when evaluated in a boolean context, while a falsy value is any value that is considered false. The following values are considered falsy in JavaScript: false, 0, -0, 0n (BigInt zero), "", null, undefined, and NaN. All other values are considered truthy. For example, the following values are considered truthy: true, 1, -1, "hello", [], {}, and function() {}.
+      console.log(Boolean(false)); // This will print false because false is a falsy value
+      console.log(Boolean(0)); // This will print false because 0 is a falsy value
+      console.log(Boolean(-0)); // This will print false because -0 is a falsy value
+      console.log(Boolean(0n)); // This will print false because 0n (BigInt zero) is a falsy value
+      console.log(Boolean("")); // This will print false because an empty string is a falsy value
+      console.log(Boolean(null)); // This will print false because null is a falsy value      
+      console.log(Boolean(undefined)); // This will print false because undefined is a falsy value
+      console.log(Boolean(NaN)); // This will print false because NaN is a falsy value
+      console.log(Boolean(true)); // This will print true because true is a truthy value
+      console.log(Boolean(1)); // This will print true because 1 is a truthy value
+      console.log(Boolean(-1)); // This will print true because -1 is a truthy value
+      console.log(Boolean("hello")); // This will print true because a non-empty string is a truthy value
+      console.log(Boolean([])); // This will print true because an empty array is a truthy value
+      console.log(Boolean({})); // This will print true because an empty object is a truthy value
+      console.log(Boolean(function() {})); // This will print true because a function is a truthy value
+      
+  </script>
+</body>
+</html>
