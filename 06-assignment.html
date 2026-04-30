@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var hour = '19';
+
+        if (hour >= 6 && hour <= 12)
+         {
+            console.log('Good Morning!');
+        } else if (hour >= 13 && hour <= 17)
+         {
+            console.log('Good Afternoon!');
+        } else if (hour >= 18 && hour <= 24)
+         {
+            console.log('Good Night!');
+        } else if ( hour >= 24) {
+            console.log('This not a correct time number');
+        }
+
+        
+        var name = "Kachi";
+        alert(`Good Morning ${name}!`);
+        
+
+        var age = 18;
+        const holiday = true;
+
+        if (age <= 6 && holiday) {
+            console.log(`you are qaulified for discount`);
+        } else if (age > 6 < 65 && holiday) {
+            console.log(`So sorry you're not qualified for discount`);
+        } else if (age >= 65 && holiday) {
+            console.log(`you are qaulified for discount`);
+        }
+    </script>
+</body>
+</html>
