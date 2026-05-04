@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Assignment</title>
+</head>
+<body>
+    <script>
+        /*
+        function greet(name) {
+            if (name) {
+               console.log(`Hello ${name}!`);
+            } else {
+                console.log('Hello there!');
+            }
+        }
+        greet();
+        */
+
+        function  convertToFahrenheit(celsius) {
+            let formula = ((celsius * 9 / 5) + 32);
+            console.log(formula);
+        }
+        convertToFahrenheit(25);
+
+        function  convertTocelsius(Fahrenheit) {
+            let formula = ((Fahrenheit - 32) * 5 / 9);
+            console.log(formula);
+        }
+        convertTocelsius(86);
+
+        function  convertTemperature(degree, unit) {
+            formula = ((degree * 9 / 5) + 32);
+            console.log(formula);
+
+            formula = ((unit - 32) * 5 / 9);
+            console.log(formula);
+        }
+        convertTemperature(25, 86);
+
+    </script>
+</body>
+</html>

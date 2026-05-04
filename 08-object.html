@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+
+        //An object groups multiple valuse toether.
+        // An object is a collection of properties, and a property is an association between a name (or key) and a value. The value of a property can be a function, in which case the property is known as a method.
+
+        // Objects are used to store data in a structured way, and they can represent real-world entities such as people, cars, or products. They can also be used to create complex data structures such as arrays and functions.
+
+        // syntax for creating an object
+        // const objectName = {
+        //     property1: value1,
+        //     property2: value2,
+        //     method1: function() {
+        //         // code to be executed
+        //     }
+        // };
+
+        const person = {
+            name: "John",
+            age: 30,
+            greet: function() {
+                console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+            }
+        };
+
+        person.greet(); // Hello, my name is John and I am 30 years old.
+
+        const product = {
+            name: "socks",
+            price: 1890,
+        };
+        console.log(product); // {name: "socks", price: 1890}
+        console.log(product.name); // socks
+        console.log(product.price); // 1890
+
+        product.name = "cotton socks";
+        console.log(product); // cotton socks
+    </script>
+</body>
+</html>
